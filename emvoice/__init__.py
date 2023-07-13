@@ -1,6 +1,5 @@
-"""Documentation about emvoice"""
+"""Extract emotion-related voice features from audio"""
 import logging
-
 
 logging.getLogger(__name__).addHandler(logging.NullHandler())
 
