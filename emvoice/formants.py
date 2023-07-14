@@ -34,22 +34,7 @@ class FormantFrames(BaseFrames):
 
     Notes
     -----
-    Estimate formants of the signal in each frame:
-
-    1. Apply a preemphasis function with the coefficient
-       ``math.exp(-2 * math.pi * preemphasis_from * (1 / sr))``
-       to the signal.
-    2. Apply a window function to the signal. By default, the same Gaussian window as in
-       Praat is used: ``(np.exp(-48.0 * (n - ((N + 1)/2)**2 / (N + 1)**2) - np.exp(-12.0)) / (1.0 - np.exp(-12.0))``,
-       where `N` is the length of the window and `n` the index of each sample.
-    3. Calculate linear predictive coefficients using :func:`librosa.lpc`
-       with order ``2 * max_formants``.
-    4. Find the roots of the coefficients.
-    5. Compute the formant central frequencies as
-       ``np.abs(np.arctan2(np.imag(roots), np.real(roots))) * sr / (2 * math.pi)``.
-    6. Compute the formant bandwidth as
-       ``np.sqrt(np.abs(np.real(roots) ** 2) + np.abs(np.imag(roots) ** 2)) * sr / (2 * math.pi)``.
-    7. Filter out formants outside the lower and upper limits.
+    See the :ref:`Algorithms section <Formant frequencies and amplitudes>` for details.
 
     """
 
