@@ -1,34 +1,32 @@
-## Badges
+# Compute emotion expression-related voice features
 
-(Customize these badges with your own links, and check https://shields.io/ or https://badgen.net/ to see which other badges are available.)
-
-| fair-software.eu recommendations | |
-| :-- | :--  |
-| (1/5) code repository              | [![github repo badge](https://img.shields.io/badge/github-repo-000.svg?logo=github&labelColor=gray&color=blue)](git@github.com:mexca/emvoice) |
-| (2/5) license                      | [![github license badge](https://img.shields.io/github/license/mexca/emvoice)](git@github.com:mexca/emvoice) |
-| (3/5) community registry           | [![RSD](https://img.shields.io/badge/rsd-emvoice-00a3e3.svg)](https://www.research-software.nl/software/emvoice) [![workflow pypi badge](https://img.shields.io/pypi/v/emvoice.svg?colorB=blue)](https://pypi.python.org/project/emvoice/) |
-| (4/5) citation                     | [![DOI](https://zenodo.org/badge/DOI/<replace-with-created-DOI>.svg)](https://doi.org/<replace-with-created-DOI>) |
-| (5/5) checklist                    | [![workflow cii badge](https://bestpractices.coreinfrastructure.org/projects/<replace-with-created-project-identifier>/badge)](https://bestpractices.coreinfrastructure.org/projects/<replace-with-created-project-identifier>) |
-| howfairis                          | [![fair-software badge](https://img.shields.io/badge/fair--software.eu-%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8B-yellow)](https://fair-software.eu) |
-| **Other best practices**           | &nbsp; |
-| Static analysis                    | [![workflow scq badge](https://sonarcloud.io/api/project_badges/measure?project=mexca_emvoice&metric=alert_status)](https://sonarcloud.io/dashboard?id=mexca_emvoice) |
-| Coverage                           | [![workflow scc badge](https://sonarcloud.io/api/project_badges/measure?project=mexca_emvoice&metric=coverage)](https://sonarcloud.io/dashboard?id=mexca_emvoice) |
-| Documentation                      | [![Documentation Status](https://readthedocs.org/projects/emvoice/badge/?version=latest)](https://emvoice.readthedocs.io/en/latest/?badge=latest) |
-| **GitHub Actions**                 | &nbsp; |
-| Build                              | [![build](git@github.com:mexca/emvoice/actions/workflows/build.yml/badge.svg)](git@github.com:mexca/emvoice/actions/workflows/build.yml) |
-| Citation data consistency               | [![cffconvert](git@github.com:mexca/emvoice/actions/workflows/cffconvert.yml/badge.svg)](git@github.com:mexca/emvoice/actions/workflows/cffconvert.yml) |
-| SonarCloud                         | [![sonarcloud](git@github.com:mexca/emvoice/actions/workflows/sonarcloud.yml/badge.svg)](git@github.com:mexca/emvoice/actions/workflows/sonarcloud.yml) |
-| MarkDown link checker              | [![markdown-link-check](git@github.com:mexca/emvoice/actions/workflows/markdown-link-check.yml/badge.svg)](git@github.com:mexca/emvoice/actions/workflows/markdown-link-check.yml) |
+[![github license badge](https://img.shields.io/github/license/mexca/emvoice)](git@github.com:mexca/emvoice)
+[![RSD](https://img.shields.io/badge/rsd-emvoice-00a3e3.svg)](https://www.research-software.nl/software/emvoice)
+[![workflow pypi badge](https://img.shields.io/pypi/v/emvoice.svg?colorB=blue)](https://pypi.python.org/project/emvoice/)
+[![fair-software badge](https://img.shields.io/badge/fair--software.eu-%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8B-yellow)](https://fair-software.eu)
+[![workflow scq badge](https://sonarcloud.io/api/project_badges/measure?project=mexca_emvoice&metric=alert_status)](https://sonarcloud.io/dashboard?id=mexca_emvoice)
+[![workflow scc badge](https://sonarcloud.io/api/project_badges/measure?project=mexca_emvoice&metric=coverage)](https://sonarcloud.io/dashboard?id=mexca_emvoice)
+[![Documentation Status](https://readthedocs.org/projects/emvoice/badge/?version=latest)](https://emvoice.readthedocs.io/en/latest/?badge=latest)
+[![build](git@github.com:mexca/emvoice/actions/workflows/build.yml/badge.svg)](git@github.com:mexca/emvoice/actions/workflows/build.yml)
+[![cffconvert](git@github.com:mexca/emvoice/actions/workflows/cffconvert.yml/badge.svg)](git@github.com:mexca/emvoice/actions/workflows/cffconvert.yml)
+[![sonarcloud](git@github.com:mexca/emvoice/actions/workflows/sonarcloud.yml/badge.svg)](git@github.com:mexca/emvoice/actions/workflows/sonarcloud.yml)
+[![markdown-link-check](git@github.com:mexca/emvoice/actions/workflows/markdown-link-check.yml/badge.svg)](git@github.com:mexca/emvoice/actions/workflows/markdown-link-check.yml)
 
 ## How to use emvoice
 
-Short description of package
+**emvoice** is a pure Python package for computing emotion expression-related features from speech signals. It uses similar algorithms as in [Praat](https://www.praat.org) and [openSMILE](https://github.com/audeering/opensmile/) but also includes more recent methods from the [librosa](https://librosa.org/doc/latest/index.html) package. Currently, most features from the extended Geneva Minimalistica Acousting Parameter Set ([eGeMAPS](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7160715)) are implemented.
 
-The project setup is documented in [project_setup.md](project_setup.md). Feel free to remove this document (and/or the link to this document) if you don't need it.
+Given that it is entirely written in Python, it is easier to include emvoice in other Python-based applications, especially if they use numpy or scipy.
 
 ## Installation
 
-To install emvoice from GitHub repository, do:
+emvoice requires Python >=3.7 and can be installed via `pip`:
+
+```console
+pip install emvoice
+```
+
+To install the lastet development version from GitHub repository, do:
 
 ```console
 git clone git@github.com:mexca/emvoice.git
@@ -38,7 +36,7 @@ python -m pip install .
 
 ## Documentation
 
-Include a link to your project's full documentation here.
+The documentation of emvoice can be found on [Read the Docs](https://emvoice.readthedocs.io/en/latest/index.html).
 
 ## Contributing
 
