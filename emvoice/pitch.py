@@ -56,7 +56,7 @@ class PitchFrames(BaseFrames):
     ):
         self.logger = logging.getLogger("emvoice.frequency.PitchFrames")
         self.flag = flag
-        self.probs = prob
+        self.prob = prob
         self.lower = lower
         self.upper = upper
         self.method = method
@@ -104,6 +104,9 @@ class PitchFrames(BaseFrames):
             If a method other than `'pyin'` is given.
 
         """
+        if hop_len is None:
+            hop_len = frame_len // 4
+
         if method == "pyin":
             pitch_f0, flag, prob = librosa.pyin(
                 sig_obj.sig,
@@ -146,21 +149,7 @@ class PitchPulseFrames(BaseFrames):
 
     Notes
     -----
-    Extract glottal pulses with these steps:
-
-    1. Interpolate the fundamental frequency at the timestamps of the framed (padded) signal.
-    2. Start at the mid point `m` of each frame and create an interval [start, stop],
-       where ``start=m-T0/2`` and
-       ``stop=m+T0/2`` and `T0` is the fundamental period (1/F0).
-    3. Detect pulses in the interval by:
-        a. Find the maximum amplitude in an interval within the frame.
-        b. Compute the fundamental period `T0_new` at the timestamp of the maximum `m_new`.
-    4. Shift the interval recursively to the right or left until the edges of the frame are reached:
-        a. When shifting to the left, set ``start_new=m_new-1.25*T0_new``
-           and ``stop_new=m_new-0.8*T0_new``.
-        b. When shifting to the right, set ``start_new=m_new+0.8*T0_new``
-           and ``stop_new=m_new+1.25*T0_new``.
-    5. Filter out duplicate pulses.
+    See :ref:`Algorithms section <Glottal pulses>` for details.
 
     """
 

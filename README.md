@@ -14,9 +14,13 @@
 
 ## How to use emvoice
 
-**emvoice** is a pure Python package for computing emotion expression-related features from speech signals. It uses similar algorithms as in [Praat](https://www.praat.org) and [openSMILE](https://github.com/audeering/opensmile/) but also includes more recent methods from the [librosa](https://librosa.org/doc/latest/index.html) package. Currently, most features from the extended Geneva Minimalistica Acousting Parameter Set ([eGeMAPS](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7160715)) are implemented.
+**emvoice** is a pure Python package for computing emotion expression-related features from speech signals. It uses similar algorithms as in [Praat](https://www.praat.org) and [openSMILE](https://github.com/audeering/opensmile/) but also includes more recent methods from the [librosa](https://librosa.org/doc/latest/index.html) package. Currently, most low-level descriptor features from the extended Geneva Minimalistic Acousting Parameter Set ([eGeMAPS](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7160715)) are implemented.
 
 Given that it is entirely written in Python, it is easier to include emvoice in other Python-based applications, especially if they use numpy or scipy.
+
+## Getting started
+
+Take a look at the [examples](https://emvoice.readthedocs.io/en/latest/examples.html) to get started with emvoice.
 
 ## Installation
 
