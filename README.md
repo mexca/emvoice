@@ -1,16 +1,16 @@
 # Compute emotion expression-related voice features
 
-[![github license badge](https://img.shields.io/github/license/mexca/emvoice)](git@github.com:mexca/emvoice)
+[![github license badge](https://img.shields.io/github/license/mexca/emvoice)](https://github.com/mexca/emvoice)
 [![RSD](https://img.shields.io/badge/rsd-emvoice-00a3e3.svg)](https://www.research-software.nl/software/emvoice)
-[![workflow pypi badge](https://img.shields.io/pypi/v/emvoice.svg?colorB=blue)](https://pypi.python.org/project/emvoice/)
 [![fair-software badge](https://img.shields.io/badge/fair--software.eu-%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8B-yellow)](https://fair-software.eu)
 [![workflow scq badge](https://sonarcloud.io/api/project_badges/measure?project=mexca_emvoice&metric=alert_status)](https://sonarcloud.io/dashboard?id=mexca_emvoice)
 [![workflow scc badge](https://sonarcloud.io/api/project_badges/measure?project=mexca_emvoice&metric=coverage)](https://sonarcloud.io/dashboard?id=mexca_emvoice)
 [![Documentation Status](https://readthedocs.org/projects/emvoice/badge/?version=latest)](https://emvoice.readthedocs.io/en/latest/?badge=latest)
-[![build](git@github.com:mexca/emvoice/actions/workflows/build.yml/badge.svg)](git@github.com:mexca/emvoice/actions/workflows/build.yml)
-[![cffconvert](git@github.com:mexca/emvoice/actions/workflows/cffconvert.yml/badge.svg)](git@github.com:mexca/emvoice/actions/workflows/cffconvert.yml)
-[![sonarcloud](git@github.com:mexca/emvoice/actions/workflows/sonarcloud.yml/badge.svg)](git@github.com:mexca/emvoice/actions/workflows/sonarcloud.yml)
-[![markdown-link-check](git@github.com:mexca/emvoice/actions/workflows/markdown-link-check.yml/badge.svg)](git@github.com:mexca/emvoice/actions/workflows/markdown-link-check.yml)
+[![build](https://github.com/mexca/emvoice/actions/workflows/build.yml/badge.svg)](https://github.com/mexca/emvoice/actions/workflows/build.yml)
+[![cffconvert](https://github.com/mexca/emvoice/actions/workflows/cffconvert.yml/badge.svg)](https://github.com/mexca/emvoice/actions/workflows/cffconvert.yml)
+[![sonarcloud](https://github.com/mexca/emvoice/actions/workflows/sonarcloud.yml/badge.svg)](https://github.com/mexca/emvoice/actions/workflows/sonarcloud.yml)
+[![markdown-link-check](https://github.com/mexca/emvoice/actions/workflows/markdown-link-check.yml/badge.svg)](https://github.com/mexca/emvoice/actions/workflows/markdown-link-check.yml)
+[![black code style badge](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 ## How to use emvoice
 
@@ -29,7 +29,7 @@ pip install emvoice
 To install the lastet development version from GitHub repository, do:
 
 ```console
-git clone git@github.com:mexca/emvoice.git
+git clone https://github.com/mexca/emvoice.git
 cd emvoice
 python -m pip install .
 ```
