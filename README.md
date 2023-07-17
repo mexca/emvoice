@@ -2,6 +2,7 @@
 
 [![github license badge](https://img.shields.io/github/license/mexca/emvoice)](https://github.com/mexca/emvoice)
 [![RSD](https://img.shields.io/badge/rsd-emvoice-00a3e3.svg)](https://www.research-software.nl/software/emvoice)
+[![DOI](https://zenodo.org/badge/665993095.svg)](https://zenodo.org/badge/latestdoi/665993095)
 [![fair-software badge](https://img.shields.io/badge/fair--software.eu-%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8B-yellow)](https://fair-software.eu)
 [![workflow scq badge](https://sonarcloud.io/api/project_badges/measure?project=mexca_emvoice&metric=alert_status)](https://sonarcloud.io/dashboard?id=mexca_emvoice)
 [![workflow scc badge](https://sonarcloud.io/api/project_badges/measure?project=mexca_emvoice&metric=coverage)](https://sonarcloud.io/dashboard?id=mexca_emvoice)

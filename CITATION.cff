@@ -8,7 +8,7 @@ authors:
     given-names: Malte
     orcid: "https://orcid.org/0000-0001-7095-203X"
 date-released: 2023-07-17
-doi: <insert your DOI here>
+doi: 10.5281/zenodo.8155380
 version: "0.1.0"
 repository-code: "https://github.com/mexca/emvoice"
 keywords:
